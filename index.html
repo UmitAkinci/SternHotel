@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>STERN Hotel — İstanbul</title>
+  <meta name="description" content="İstanbul'un kalbinde eşsiz lüks deneyimi. Obsidian Palace Hotel ile zamanın durduğu bir konaklamayı yaşayın." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ══ NAVBAR ══════════════════════════════════════════════ -->
+  <nav class="navbar">
+    <div class="container navbar__inner">
+      <a href="index.html" class="navbar__logo">
+        STERN<br><span>Hotel</span>
+      </a>
+      <ul class="navbar__links">
+        <li><a href="index.html" class="active">Anasayfa</a></li>
+        <li><a href="odalar.html">Odalar</a></li>
+        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+        <li><a href="galeri.html">Galeri</a></li>
+        <li><a href="iletisim.html">İletişim</a></li>
+      </ul>
+      <a href="iletisim.html" class="btn btn-gold navbar__cta">Rezervasyon</a>
+      <button class="hamburger" aria-label="Menüyü aç">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobil menü -->
+  <div class="mobile-overlay"></div>
+  <nav class="mobile-menu">
+    <a href="index.html">Anasayfa</a>
+    <a href="odalar.html">Odalar</a>
+    <a href="hakkimizda.html">Hakkımızda</a>
+    <a href="galeri.html">Galeri</a>
+    <a href="iletisim.html">İletişim</a>
+    <a href="iletisim.html" class="btn btn-gold">Rezervasyon</a>
+  </nav>
+
+  <!-- ══ HERO ════════════════════════════════════════════════ -->
+  <section class="hero">
+   <div class="hero__bg"><div class="video-box">
+   <video autoplay muted loop playsinline>
+      <source src="file:///C:/Users/umit/Downloads/hotel-website-static/hotel-static/videos/istanbul.mp4" type="video/mp4" />
+    </video>
+	</div> 	 
+	</div> 
+
+    <div class="hero__content">
+      <span class="hero__tag">Zirvede Bir Deneyim</span>
+      <h1 class="hero__title">Karanlık ve <em>Altın</em></h1>
+      <p class="hero__desc">Obsidian Palace'a adım atın. İstanbul'un kalbinde, yalnızca seçkin misafirlerimiz için tasarlanmış, sessiz ve güçlü bir sığınak.</p>
+      <div class="hero__actions">
+        <a href="odalar.html" class="btn btn-gold">Odaları Keşfet</a>
+        <a href="iletisim.html" class="btn btn-outline">Rezervasyon Yap</a>
+      </div>
+    </div>
+    <div class="hero__scroll">
+      <span>Kaydır</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ══ GEÇİŞ KÖPRÜSÜ ══════════════════════════════════════ -->
+  <section class="bridge">
+    <div class="container">
+      <div class="ornament"><span><i></i><i></i><i></i></span></div>
+      <div class="bridge__stats">
+        <div class="bridge__stat fade-in">
+          <div class="bridge__stat-val">12+</div>
+          <div class="bridge__stat-label">Yıllık Deneyim</div>
+        </div>
+        <div class="bridge__stat fade-in delay-1">
+          <div class="bridge__stat-val">48K</div>
+          <div class="bridge__stat-label">Mutlu Misafir</div>
+        </div>
+        <div class="bridge__stat fade-in delay-2">
+          <div class="bridge__stat-val">23</div>
+          <div class="bridge__stat-label">Uluslararası Ödül</div>
+        </div>
+        <div class="bridge__stat fade-in delay-3">
+          <div class="bridge__stat-val">5★</div>
+          <div class="bridge__stat-label">Lüks Sınıfı</div>
+        </div>
+      </div>
+      <p class="bridge__quote fade-in">"İstanbul'un en yüksek noktasında, zamanın durduğu bir an sizi bekliyor."</p>
+      <div class="ornament" style="margin-top:2rem"><span><i></i><i></i><i></i></span></div>
+    </div>
+  </section>
+
+  <!-- ══ VIDEO ═══════════════════════════════════════════════ -->
+  <section class="video-section">
+    <video autoplay muted loop playsinline>
+      <source src="file:///C:/Users/umit/Downloads/hotel-website-static/hotel-static/videos/istanbul.mp4" type="video/mp4" />
+    </video>
+    <div class="video-section__overlay"></div>
+    <div class="video-section__corner video-section__corner--tl"></div>
+    <div class="video-section__corner video-section__corner--tr"></div>
+    <div class="video-section__corner video-section__corner--bl"></div>
+    <div class="video-section__corner video-section__corner--br"></div>
+    <div class="video-section__content">
+      <span class="tag" style="color:rgba(212,175,90,.8)">Deneyimi Hissedin</span>
+      <h2>Her An Bir <em style="font-style:italic;color:var(--gold-lt)">Başyapıt</em></h2>
+      <p>Lüksü yeniden tanımlayan mekânlarımızı keşfedin.</p>
+      <a href="galeri.html" class="btn btn-outline">Galeriyi Gör</a>
+    </div>
+    <div class="video-controls">
+      <button id="btn-play" title="Oynat / Durdur">⏸</button>
+      <button id="btn-mute" title="Ses">🔇</button>
+    </div>
+  </section>
+
+  <!-- ══ ÖNE ÇIKAN ODALAR ════════════════════════════════════ -->
+  <section class="section">
+    <div class="container text-center">
+      <span class="tag">Seçkin Koleksiyonumuz</span>
+      <h2 class="section-title">Öne Çıkan Odalar</h2>
+      <div class="ornament"><span><i></i><i></i><i></i></span></div>
+      <p class="section-lead">Her oda, kişisel konforunuz düşünülerek özenle tasarlanmıştır.</p>
+
+      <div class="rooms-grid">
+
+        <div class="room-card fade-in">
+          <div class="room-card__img">
+            <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=700&q=80" alt="Grand Suite" loading="lazy" />
+          </div>
+          <div class="room-card__body">
+            <h3 class="room-card__name">Grand Suite</h3>
+            <div class="room-card__meta">
+              <span>📐 120 m²</span>
+              <span>🛏 1 Yatak Odası</span>
+              <span>👤 2 Misafir</span>
+            </div>
+            <a href="odalar.html" class="btn btn-outline-dark" style="font-size:0.58rem">İncele</a>
+          </div>
+        </div>
+
+        <div class="room-card fade-in delay-1">
+          <div class="room-card__img">
+            <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=700&q=80" alt="Penthouse Suite" loading="lazy" />
+          </div>
+          <div class="room-card__body">
+            <h3 class="room-card__name">Penthouse Suite</h3>
+            <div class="room-card__meta">
+              <span>📐 280 m²</span>
+              <span>🛏 3 Yatak Odası</span>
+              <span>👤 6 Misafir</span>
+            </div>
+            <a href="odalar.html" class="btn btn-outline-dark" style="font-size:0.58rem">İncele</a>
+          </div>
+        </div>
+
+        <div class="room-card fade-in delay-2">
+          <div class="room-card__img">
+            <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=700&q=80" alt="Panorama Suite" loading="lazy" />
+          </div>
+          <div class="room-card__body">
+            <h3 class="room-card__name">Panorama Suite</h3>
+            <div class="room-card__meta">
+              <span>📐 95 m²</span>
+              <span>🛏 1 Yatak Odası</span>
+              <span>👤 2 Misafir</span>
+            </div>
+            <a href="odalar.html" class="btn btn-outline-dark" style="font-size:0.58rem">İncele</a>
+          </div>
+        </div>
+
+      </div>
+      <div style="margin-top:2.5rem">
+        <a href="odalar.html" class="btn btn-gold">Tüm Odaları Gör</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ OLANAKLAR ═══════════════════════════════════════════ -->
+  <section class="section section--dark">
+    <div class="container text-center">
+      <span class="tag">Ayrıcalıklı Hizmetler</span>
+      <h2 class="section-title" style="color:#fff">Dünya Standartlarında Olanaklar</h2>
+      <div class="ornament" style="--border:rgba(255,255,255,.12)"><span><i></i><i></i><i></i></span></div>
+      <p class="section-lead" style="color:rgba(255,255,255,.45)">Konaklamanızı unutulmaz kılan hizmetlerimizi keşfedin.</p>
+
+      <div class="amenities-grid" style="margin-top:2.5rem">
+        <div class="amenity-card fade-in">
+          <div class="amenity-card__icon">♨️</div>
+          <div class="amenity-card__name">Spa & Wellness</div>
+          <div class="amenity-card__desc">Geleneksel Türk hamamı ve modern spa tedavileri.</div>
+        </div>
+        <div class="amenity-card fade-in delay-1">
+          <div class="amenity-card__icon">🍽️</div>
+          <div class="amenity-card__name">Fine Dining</div>
+          <div class="amenity-card__desc">Michelin yıldızlı şefimizin özgün mutfak deneyimi.</div>
+        </div>
+        <div class="amenity-card fade-in delay-2">
+          <div class="amenity-card__icon">🏊</div>
+          <div class="amenity-card__name">Sonsuzluk Havuzu</div>
+          <div class="amenity-card__desc">İstanbul siluetine karşı özel çatı havuzu.</div>
+        </div>
+        <div class="amenity-card fade-in delay-3">
+          <div class="amenity-card__icon">🍸</div>
+          <div class="amenity-card__name">Rooftop Bar</div>
+          <div class="amenity-card__desc">Şehrin en güzel manzarasında kokteyl saati.</div>
+        </div>
+        <div class="amenity-card fade-in">
+          <div class="amenity-card__icon">🚁</div>
+          <div class="amenity-card__name">Özel Transfer</div>
+          <div class="amenity-card__desc">Havalimanı VIP karşılama ve helikopter servisi.</div>
+        </div>
+        <div class="amenity-card fade-in delay-1">
+          <div class="amenity-card__icon">🏋️</div>
+          <div class="amenity-card__name">Fitness Center</div>
+          <div class="amenity-card__desc">24 saat açık, kişisel antrenör hizmetli spor salonu.</div>
+        </div>
+        <div class="amenity-card fade-in delay-2">
+          <div class="amenity-card__icon">💼</div>
+          <div class="amenity-card__name">Concierge</div>
+          <div class="amenity-card__desc">7/24 kişisel asistan ve özel etkinlik organizasyonu.</div>
+        </div>
+        <div class="amenity-card fade-in delay-3">
+          <div class="amenity-card__icon">🌿</div>
+          <div class="amenity-card__name">Bahçe & Teras</div>
+          <div class="amenity-card__desc">Özel bahçe alanları ve misafirlerimize özel teraslar.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ MİSAFİR GÖRÜŞLERİ ══════════════════════════════════ -->
+  <section class="section">
+    <div class="container text-center">
+      <span class="tag">Misafir Deneyimleri</span>
+      <h2 class="section-title">Onlar Ne Dedi?</h2>
+      <div class="ornament"><span><i></i><i></i><i></i></span></div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card fade-in">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <p class="testimonial-card__text">"Hayatımda kaldığım en özel otelde kalmış olmaktan büyük mutluluk duyuyorum. Her detay kusursuzca düşünülmüş, personel son derece ilgili."</p>
+          <div class="testimonial-card__author">
+            <img class="testimonial-card__avatar" src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=80&q=80" alt="Ayşe K." />
+            <div>
+              <div class="testimonial-card__name">Ayşe K.</div>
+              <div class="testimonial-card__meta">İstanbul — Mayıs 2025</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card fade-in delay-1">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <p class="testimonial-card__text">"Penthouse Suite'de geçirdiğimiz hafta sonu inanılmaz güzeldi. Boğaz manzarası ve spa deneyimi bizi büyüledi."</p>
+          <div class="testimonial-card__author">
+            <img class="testimonial-card__avatar" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&q=80" alt="Mehmet Y." />
+            <div>
+              <div class="testimonial-card__name">Mehmet Y.</div>
+              <div class="testimonial-card__meta">Ankara — Mart 2025</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card fade-in delay-2">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <p class="testimonial-card__text">"Fine dining restoranındaki yemekler olağanüstüydü. Şef masaya bizzat geldi ve özel tercihlerimizi öğrendi. Gerçek lüks bu demek."</p>
+          <div class="testimonial-card__author">
+            <img class="testimonial-card__avatar" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&q=80" alt="Sarah M." />
+            <div>
+              <div class="testimonial-card__name">Sarah M.</div>
+              <div class="testimonial-card__meta">London — Ocak 2025</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card fade-in delay-3">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <p class="testimonial-card__text">"İş gezisi için tercih ettim ancak ayrılmak istemedim. Concierge hizmetleri sayesinde tüm toplantılarım kusursuz geçti."</p>
+          <div class="testimonial-card__author">
+            <img class="testimonial-card__avatar" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&q=80" alt="Thomas B." />
+            <div>
+              <div class="testimonial-card__name">Thomas B.</div>
+              <div class="testimonial-card__meta">Paris — Şubat 2025</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ CTA BANNER ══════════════════════════════════════════ -->
+  <section style="background:var(--dark);padding:4rem 0;text-align:center;position:relative;overflow:hidden;">
+    <div style="position:absolute;inset:0;background-image:url('https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=1400&q=60');background-size:cover;background-position:center;opacity:.08;"></div>
+    <div class="container" style="position:relative">
+      <span class="tag" style="color:var(--gold-lt)">Sizi Bekliyoruz</span>
+      <h2 class="section-title" style="color:#fff;margin-bottom:0.75rem">Unutulmaz Bir Konaklama<br>Sizi Bekliyor</h2>
+      <p style="font-size:0.82rem;color:rgba(255,255,255,.45);margin-bottom:2rem;max-width:440px;margin-inline:auto;">Şimdi rezervasyon yapın, ayrıcalıklı erken rezervasyon indiriminden yararlanın.</p>
+      <a href="iletisim.html" class="btn btn-gold">Rezervasyon Yap</a>
+    </div>
+  </section>
+
+  <!-- ══ FOOTER ══════════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">STERN</div>
+          <div class="footer__logo-sub">Hotel</div>
+          <p>İstanbul'un kalbinde, eşsiz bir lüks deneyimi. Her detayda mükemmelliği arayan seçkin misafirlerimiz için tasarlandı.</p>
+        </div>
+        <div class="footer__col">
+          <h4>Sayfalar</h4>
+          <a href="index.html">Anasayfa</a>
+          <a href="odalar.html">Odalar</a>
+          <a href="hakkimizda.html">Hakkımızda</a>
+          <a href="galeri.html">Galeri</a>
+          <a href="iletisim.html">İletişim</a>
+        </div>
+        <div class="footer__col">
+          <h4>Hizmetler</h4>
+          <a href="#">Spa & Wellness</a>
+          <a href="#">Fine Dining</a>
+          <a href="#">Rooftop Bar</a>
+          <a href="#">Özel Transfer</a>
+          <a href="#">Etkinlik & Toplantı</a>
+        </div>
+        <div class="footer__col">
+          <h4>İletişim</h4>
+          <a href="tel:+902121234567">+90 212 123 45 67</a>
+          <a href="mailto:info@obsidianpalace.com">info@sternhotel.com</a>
+          <a href="#">Harbiye Mah. İstanbul</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2025 STERN Hotel. Tüm hakları saklıdır.</span>
+        <span><a href="#">Gizlilik Politikası</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

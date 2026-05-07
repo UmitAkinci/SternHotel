@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galeri — Obsidian Palace Hotel</title>
+  <meta name="description" content="Obsidian Palace Hotel'in büyüleyici mekânlarını fotoğraflarla keşfedin." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container navbar__inner">
+      <a href="index.html" class="navbar__logo">OBSIDIAN<span>Palace Hotel</span></a>
+      <ul class="navbar__links">
+        <li><a href="index.html">Anasayfa</a></li>
+        <li><a href="odalar.html">Odalar</a></li>
+        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+        <li><a href="galeri.html" class="active">Galeri</a></li>
+        <li><a href="iletisim.html">İletişim</a></li>
+      </ul>
+      <a href="iletisim.html" class="btn btn-gold navbar__cta">Rezervasyon</a>
+      <button class="hamburger" aria-label="Menüyü aç"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="mobile-overlay"></div>
+  <nav class="mobile-menu">
+    <a href="index.html">Anasayfa</a>
+    <a href="odalar.html">Odalar</a>
+    <a href="hakkimizda.html">Hakkımızda</a>
+    <a href="galeri.html">Galeri</a>
+    <a href="iletisim.html">İletişim</a>
+    <a href="iletisim.html" class="btn btn-gold">Rezervasyon</a>
+  </nav>
+
+  <div class="page-hero">
+    <div class="page-hero__content">
+      <span class="tag">Görsel Deneyim</span>
+      <h1>Galeri</h1>
+      <p>Obsidian Palace'ın büyüleyici dünyasına bir pencere açın.</p>
+    </div>
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox">
+    <button class="lightbox__close" aria-label="Kapat">✕</button>
+    <img src="" alt="Galeri" />
+  </div>
+
+  <section class="section">
+    <div class="container">
+
+      <!-- Odalar -->
+      <div style="margin-bottom:2.5rem;">
+        <span class="tag">Odalar & Suitler</span>
+        <h2 class="section-title" style="font-size:1.4rem;">Odalarımız</h2>
+        <div class="ornament" style="justify-content:flex-start"><span><i></i><i></i><i></i></span></div>
+      </div>
+      <div class="gallery-grid" style="margin-bottom:3.5rem;">
+        <div class="gallery-item wide fade-in">
+          <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=900&q=80" alt="Grand Suite" loading="lazy" />
+          <div class="gallery-item__overlay"><span class="gallery-item__label">Grand Suite</span></div>
+        </div>
+        <div class="gallery-item fade-in delay-1">
+          <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=700&q=80" alt="Penthouse Suite" loading="lazy" />
+          <div class="gallery-item__overlay"><span class="gallery-item__label">Penthouse Suite</span></div>
+        </div>
+        <div class="gallery-item fade-in delay-2">
+          <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=700&q=80" alt="Panorama Suite" loading="lazy" />
+          <div class="gallery-item__overlay"><span class="gallery-item__label">Panorama Suite</span></div>
+        </div>
+        <div class="gallery-item fade-in">
+          <img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=700&q=80" alt="Deluxe Oda" loading="lazy" />
+          <div class="gallery-item__overlay"><span class="gallery-item__label">Deluxe Oda</span></div>
+        </div>
+        <div class="gallery-item wide fade-in delay-1">
+          <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=900&q=80" alt="Executive Oda" loading="lazy" />
+          <div class="gallery-item__overlay"><span class="gallery-item__label">Executive Oda</span></div>
+        </div>
+      </div>
+
+      <!-- Restoran & Bar -->
+      <div style="margin-bottom:2.5rem;">
+        <span class="tag">Yeme & İçme</span>
+        <h2 class="section-title" style="font-size:1.4rem;">Restoran & Bar</h2>
+        <div class="ornament" style="justify-content:flex-start"><span><i></i><i></i><i></i></span></div>
+      </div>
+      <div class="gallery-grid" style="margin-bottom:3.5rem;">
+        <div class="gallery-item fade-in">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=700&q=80" alt="Fine Dining" loading="lazy" />
+          <div class="gallery-item__overlay"><span class="gallery-item__label">Fine Dining</span></div>
+        </div>
+        <div class="gallery-item wide fade-in delay-1">
+          <img src="https://images.unsplash.com/photo-1508424757105-b6d5ad9329d0?w=900&q=80" alt="Rooftop Bar" loading="lazy" />
+          <div class="gallery-item__overlay"><span class="gallery-item__label">Rooftop Bar</span></div>
+        </div>
+        <div class="gallery-item wide fade-in">
+          <img src="https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?w=900&q=80" alt="Kahvaltı Salonu" loading="lazy" />
+          <div class="gallery-item__overlay"><span class="gallery-item__label">Kahvaltı Salonu</span></div>
+        </div>
+        <div class="gallery-item fade-in delay-1">
+          <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=700&q=80" alt="Özel Şef" loading="lazy" />
+          <div class="gallery-item__overlay"><span class="gallery-item__label">Özel Şef</span></div>
+        </div>
+      </div>
+
+      <!-- Spa & Havuz -->
+      <div style="margin-bottom:2.5rem;">
+        <span class="tag">Dinlenme & Wellness</span>
+        <h2 class="section-title" style="font-size:1.4rem;">Spa & Havuz</h2>
+        <div class="ornament" style="justify-content:flex-start"><span><i></i><i></i><i></i></span></div>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item wide fade-in">
+          <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=900&q=80" alt="Sonsuzluk Havuzu" loading="lazy" />
+          <div class="gallery-item__overlay"><span class="gallery-item__label">Sonsuzluk Havuzu</span></div>
+        </div>
+        <div class="gallery-item fade-in delay-1">
+          <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=700&q=80" alt="Spa" loading="lazy" />
+          <div class="gallery-item__overlay"><span class="gallery-item__label">Spa & Hamam</span></div>
+        </div>
+        <div class="gallery-item fade-in delay-2">
+          <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=700&q=80" alt="Fitness" loading="lazy" />
+          <div class="gallery-item__overlay"><span class="gallery-item__label">Fitness Center</span></div>
+        </div>
+        <div class="gallery-item wide fade-in">
+          <img src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?w=900&q=80" alt="Bahçe" loading="lazy" />
+          <div class="gallery-item__overlay"><span class="gallery-item__label">Bahçe & Teras</span></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">OBSIDIAN</div>
+          <div class="footer__logo-sub">Palace Hotel</div>
+          <p>İstanbul'un kalbinde, eşsiz bir lüks deneyimi.</p>
+        </div>
+        <div class="footer__col">
+          <h4>Sayfalar</h4>
+          <a href="index.html">Anasayfa</a>
+          <a href="odalar.html">Odalar</a>
+          <a href="hakkimizda.html">Hakkımızda</a>
+          <a href="galeri.html">Galeri</a>
+          <a href="iletisim.html">İletişim</a>
+        </div>
+        <div class="footer__col">
+          <h4>Hizmetler</h4>
+          <a href="#">Spa & Wellness</a>
+          <a href="#">Fine Dining</a>
+          <a href="#">Rooftop Bar</a>
+          <a href="#">Özel Transfer</a>
+        </div>
+        <div class="footer__col">
+          <h4>İletişim</h4>
+          <a href="tel:+902121234567">+90 212 123 45 67</a>
+          <a href="mailto:info@obsidianpalace.com">info@obsidianpalace.com</a>
+          <a href="#">Harbiye Mah. İstanbul</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2025 Obsidian Palace Hotel. Tüm hakları saklıdır.</span>
+        <span><a href="#">Gizlilik Politikası</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

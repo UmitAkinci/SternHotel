@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>İletişim & Rezervasyon — Obsidian Palace Hotel</title>
+  <meta name="description" content="Obsidian Palace Hotel ile iletişime geçin veya rezervasyon yapın." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container navbar__inner">
+      <a href="index.html" class="navbar__logo">OBSIDIAN<span>Palace Hotel</span></a>
+      <ul class="navbar__links">
+        <li><a href="index.html">Anasayfa</a></li>
+        <li><a href="odalar.html">Odalar</a></li>
+        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+        <li><a href="galeri.html">Galeri</a></li>
+        <li><a href="iletisim.html" class="active">İletişim</a></li>
+      </ul>
+      <a href="iletisim.html" class="btn btn-gold navbar__cta">Rezervasyon</a>
+      <button class="hamburger" aria-label="Menüyü aç"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="mobile-overlay"></div>
+  <nav class="mobile-menu">
+    <a href="index.html">Anasayfa</a>
+    <a href="odalar.html">Odalar</a>
+    <a href="hakkimizda.html">Hakkımızda</a>
+    <a href="galeri.html">Galeri</a>
+    <a href="iletisim.html">İletişim</a>
+    <a href="iletisim.html" class="btn btn-gold">Rezervasyon</a>
+  </nav>
+
+  <div class="page-hero">
+    <div class="page-hero__content">
+      <span class="tag">Bize Ulaşın</span>
+      <h1>İletişim & Rezervasyon</h1>
+      <p>Sizi en kısa sürede arayacağız. Seçkin misafirlerimiz için her zaman buradayız.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="contact-layout">
+
+        <!-- İletişim Bilgileri -->
+        <div class="fade-in-left">
+          <h3>Merhaba, Sizi Bekliyoruz</h3>
+          <p>Rezervasyon, özel etkinlik veya herhangi bir konuda destek almak için formu doldurun ya da doğrudan bize ulaşın. Concierge ekibimiz 7/24 hizmetinizde.</p>
+
+          <div class="contact-item">
+            <div class="contact-item__icon">📞</div>
+            <div>
+              <div class="contact-item__label">Telefon</div>
+              <div class="contact-item__val">+90 212 123 45 67</div>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-item__icon">✉️</div>
+            <div>
+              <div class="contact-item__label">E-posta</div>
+              <div class="contact-item__val">info@obsidianpalace.com</div>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-item__icon">📍</div>
+            <div>
+              <div class="contact-item__label">Adres</div>
+              <div class="contact-item__val">Harbiye Mah. Cumhuriyet Cad. No:42<br>Şişli, İstanbul 34367</div>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-item__icon">🕐</div>
+            <div>
+              <div class="contact-item__label">Resepsiyon</div>
+              <div class="contact-item__val">7/24 Açık</div>
+            </div>
+          </div>
+
+          <!-- Harita placeholder -->
+          <div style="margin-top:2rem;border-radius:6px;overflow:hidden;border:1px solid var(--border);">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12039.79849999999!2d28.98!3d41.05!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDAzJzAwLjAiTiAyOMKwNTgnNDguMCJF!5e0!3m2!1str!2str!4v1700000000000!5m2!1str!2str"
+              width="100%" height="220" style="border:0;display:block;" allowfullscreen="" loading="lazy"
+              title="Obsidian Palace Hotel Konum">
+            </iframe>
+          </div>
+        </div>
+
+        <!-- İletişim Formu -->
+        <div class="fade-in-right">
+          <div class="contact-form">
+            <h3>Rezervasyon Formu</h3>
+
+            <form id="contact-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Ad Soyad *</label>
+                  <input type="text" id="name" name="name" placeholder="Adınız" required />
+                </div>
+                <div class="form-group">
+                  <label for="email">E-posta *</label>
+                  <input type="email" id="email" name="email" placeholder="ornek@mail.com" required />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="phone">Telefon</label>
+                  <input type="tel" id="phone" name="phone" placeholder="+90 5xx xxx xx xx" />
+                </div>
+                <div class="form-group">
+                  <label for="subject">Konu</label>
+                  <select id="subject" name="subject">
+                    <option value="Rezervasyon">Rezervasyon</option>
+                    <option value="Özel Etkinlik">Özel Etkinlik</option>
+                    <option value="Kurumsal">Kurumsal Konaklama</option>
+                    <option value="Diğer">Diğer</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="checkin">Giriş Tarihi</label>
+                  <input type="date" id="checkin" name="checkin" />
+                </div>
+                <div class="form-group">
+                  <label for="checkout">Çıkış Tarihi</label>
+                  <input type="date" id="checkout" name="checkout" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Mesajınız *</label>
+                <textarea id="message" name="message" placeholder="Bize iletmek istediğiniz her şeyi buraya yazabilirsiniz…" required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-gold" style="width:100%;justify-content:center;">Gönder</button>
+            </form>
+
+            <div id="form-success" class="form-success">
+              <p style="font-size:1.6rem;margin-bottom:0.5rem;">✦</p>
+              <p style="font-size:1rem;color:var(--text);font-family:var(--font-serif);font-weight:500;margin-bottom:0.5rem;">Mesajınız Alındı</p>
+              <p style="font-size:0.8rem;color:var(--muted);">En kısa sürede concierge ekibimiz sizinle iletişime geçecektir.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">OBSIDIAN</div>
+          <div class="footer__logo-sub">Palace Hotel</div>
+          <p>İstanbul'un kalbinde, eşsiz bir lüks deneyimi.</p>
+        </div>
+        <div class="footer__col">
+          <h4>Sayfalar</h4>
+          <a href="index.html">Anasayfa</a>
+          <a href="odalar.html">Odalar</a>
+          <a href="hakkimizda.html">Hakkımızda</a>
+          <a href="galeri.html">Galeri</a>
+          <a href="iletisim.html">İletişim</a>
+        </div>
+        <div class="footer__col">
+          <h4>Hizmetler</h4>
+          <a href="#">Spa & Wellness</a>
+          <a href="#">Fine Dining</a>
+          <a href="#">Rooftop Bar</a>
+          <a href="#">Özel Transfer</a>
+        </div>
+        <div class="footer__col">
+          <h4>İletişim</h4>
+          <a href="tel:+902121234567">+90 212 123 45 67</a>
+          <a href="mailto:info@obsidianpalace.com">info@obsidianpalace.com</a>
+          <a href="#">Harbiye Mah. İstanbul</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2025 Obsidian Palace Hotel. Tüm hakları saklıdır.</span>
+        <span><a href="#">Gizlilik Politikası</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
